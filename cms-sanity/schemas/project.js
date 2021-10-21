@@ -21,6 +21,16 @@ export default {
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
+      fields: [
+        {
+          name: 'caption',
+          type: 'string',
+          title: 'Caption',
+          options: {
+            isHighlighted: true,
+          },
+        },
+      ],
     },
     {
       name: 'categories',
@@ -40,6 +50,9 @@ export default {
       of: [
         {
           type: 'block',
+        },
+        {
+          type: 'contentColumns',
         },
         {
           type: 'image',
@@ -68,7 +81,22 @@ export default {
       name: 'images',
       title: 'Images',
       type: 'array',
-      of: [{ type: 'image' }, { type: 'imageBlock' }],
+      of: [
+        {
+          type: 'image',
+          fields: [
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+              options: {
+                isHighlighted: true,
+              },
+            },
+          ],
+        },
+        { type: 'imageBlock' },
+      ],
     },
     {
       name: 'logos',
