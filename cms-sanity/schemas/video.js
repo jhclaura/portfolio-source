@@ -8,5 +8,10 @@ export default {
       type: 'url',
       title: 'Video URL',
     },
+    {
+      name: 'caption',
+      type: 'text',
+      title: 'Caption',
+    },
   ],
 }

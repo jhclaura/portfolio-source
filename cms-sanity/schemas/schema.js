@@ -13,9 +13,11 @@ import project from './project'
 import projectList from './projectList'
 import video from './video'
 import imageBlock from './imageBlock'
+import imageSlide from './imageSlide'
 import page from './page'
 import contentColumns from './contentColumns'
 import column from './column'
+import flickr from './flickr'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -36,8 +38,10 @@ export default createSchema({
     projectList,
     video,
     imageBlock,
+    imageSlide,
     page,
     contentColumns,
     column,
+    flickr,
   ]),
 })

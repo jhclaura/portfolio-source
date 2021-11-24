@@ -27,6 +27,7 @@ export default {
         { title: 'H3', value: 'h3' },
         { title: 'H4', value: 'h4' },
         { title: 'Quote', value: 'blockquote' },
+        { title: 'Metadata', value: 'metadata' },
       ],
       lists: [{ title: 'Bullet', value: 'bullet' }],
       // Marks let you mark up inline text in the block editor.
@@ -49,7 +50,16 @@ export default {
                 name: 'href',
                 type: 'url',
               },
+              {
+                title: 'Open in new tab',
+                name: 'blank',
+                description: 'Read https://css-tricks.com/use-target_blank/',
+                type: 'boolean',
+              },
             ],
+            initialValue: {
+              blank: true,
+            },
           },
         ],
       },
@@ -59,10 +69,34 @@ export default {
     // as a block type.
     {
       type: 'image',
+      fields: [
+        {
+          name: 'caption',
+          type: 'text',
+          title: 'Caption',
+          options: {
+            isHighlighted: true,
+          },
+        },
+        {
+          name: 'width',
+          type: 'number',
+          title: 'Width',
+        },
+        {
+          name: 'height',
+          type: 'number',
+          title: 'Height',
+        },
+      ],
       options: { hotspot: true },
     },
+    { type: 'imageBlock' },
     {
       type: 'video',
+    },
+    {
+      type: 'flickr',
     },
   ],
 }
