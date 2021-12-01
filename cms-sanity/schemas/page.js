@@ -19,7 +19,7 @@ export default {
     },
     {
       name: 'coverImage',
-      title: 'Main image',
+      title: 'Cover image',
       type: 'image',
       options: {
         hotspot: true,
