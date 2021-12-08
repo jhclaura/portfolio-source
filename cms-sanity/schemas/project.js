@@ -49,6 +49,7 @@ export default {
           type: 'block',
           marks: {
             annotations: [
+              { name: 'color', title: 'Color', type: 'color' },
               {
                 name: 'link',
                 type: 'object',

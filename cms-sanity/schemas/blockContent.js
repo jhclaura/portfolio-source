@@ -61,6 +61,7 @@ export default {
               blank: true,
             },
           },
+          { name: 'color', title: 'Color', type: 'color' },
         ],
       },
     },
