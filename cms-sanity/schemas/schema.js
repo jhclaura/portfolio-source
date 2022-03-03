@@ -18,6 +18,7 @@ import page from './page'
 import contentColumns from './contentColumns'
 import column from './column'
 import flickr from './flickr'
+import imageUrl from './imageUrl'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -43,5 +44,6 @@ export default createSchema({
     contentColumns,
     column,
     flickr,
+    imageUrl,
   ]),
 })

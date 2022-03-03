@@ -99,5 +99,8 @@ export default {
     {
       type: 'flickr',
     },
+    {
+      type: 'imageUrl',
+    },
   ],
 }
